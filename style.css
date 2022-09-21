@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    }
+    body {
+        margin: 0px;
+        background-color: #34657F;
+    }
+    /* Style the header */
+    .header {
+        width: auto;
+        height: auto;
+        padding: 10px;
+    }
+    .footer {
+        background: #8DB9CA;
+        font-size: 10px;
+    }
+    /* Style the top navigation bar */
+    .topnav {
+    overflow: hidden;
+    background-color: #253746;
+    
+    }
+    /* Style the topnav links */
+    .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    .topnav img {
+        float: left;
+        height: 150px;
+        width: auto;
+        background-color: white;
+    }
+    /* Change color on hover */
+    .topnav a:hover {
+    background-color: #3f4444;
+    }
+    /* Create three unequal columns that floats next to each other */
+    .column {
+    float: left;
+    padding: 10px;
+    }
+    /* Left and right column */
+    .column.side {
+    width: 30%;
+    
+    }
+    /* Middle column */
+    .column.middle {
+    width: 40%;
+    }
+    /* Clear floats after the columns */
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other
+    */
+    @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+    width: 100%;
+    }
+}
+
+/* Rounded corners on paragraphs and images*/
+.row p {
+    border: 1px solid #969696;
+    border-radius: 5px;
+}
+.row img {
+    border: 1px solid #969696;
+    border-radius: 5px;
+}
+
+.content p {
+    background: #8DB9CA;
+    box-shadow: 3px 3px 5px;
+}
+.content img {
+    background-color: #8DB9CA;
+    box-shadow: 3px 3px 5px;
+}
