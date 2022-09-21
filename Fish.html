@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ICAI Fish Website</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KBJPCEYSE4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-KBJPCEYSE4');
+    </script>
+     
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+     
+    <link rel="canonical" href="https://ai-output.thebitone.repl.co" />
+    <meta name="author" content="ICAI Leadership Team">
+
+
+    <meta name="description" content="A data display website for the ICAI Fish Passage team that displays a livestream and a graph">
+
+
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    </head>
+
+    <body>
+        <div class="header">
+        <div class="topnav">
+            <img src="https://codehs.com/uploads/53662eb0e6cc8aeb7b048298d16660e0">
+            <a href="index.html">Home</a>
+            <a href="Fish.html">Fish Passage</a>
+            <a href="JimHamm.html">Critter Cam</a>
+            <a href="about.html">About Us</a>
+        </div>
+        </div>
+        <div class="content">
+        
+        <div class="row">
+            <!--Left Side-->
+            <div class="column side">
+                <p>This page has a livestream from our cameras and graphs of our collected data.
+                    Contact us at <a href="mailto:icai-fish-group@svvsd.org"> 
+                    icai-fish-group@svvsd.org</a> with any questions or suggestions.</p>
+            </div>
+            <!--Center-->
+            <div class="column middle">
+                <p>
+                    Real-Time output from one of our cameras (for now it isn't working).
+                    <!--Iframe for stream-->
+                    <iframe
+                        title="Livestream from underwater camera"
+                        src="youtube link" 
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen="true"
+                        height="100%"
+                        width="100%">
+                    </iframe>
+                    
+                    This steam is the real time video our cameras are capturing. 
+                    This is what our analysis AI model is using to find fish in.
+                </p>
+                
+            </div>
+            <!--Right Side-->
+            <div class="column side">
+                <p style="text-align: Center;">
+                Graph of the total fish we have spotted.
+                <canvas width="500" height="500"><script src="graph.js"></script></canvas>
+                Refresh to posibly see a change
+                </p>
+            </div>
+        </div>
+        </div>
+        <div class="footer">
+            <h2>Web Desginer: Connor Zakavec &copy 2022</h2>
+        </div>
+        
+    </body>
+</html>
